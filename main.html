@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circle Target Game</title>
+  <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+  <div id="registrationForm">
+  <h2>Identifier Code</h2>
+  <label>Before starting the game please</label>
+  <br></br>
+  <label>fill out the identifier questions below</label>
+  <br></br>
+  <label>so that we can assign the data of the game to you.</label>
+  <br></br>
+  <br></br>
+  <form id="form">
+    <label for="street">Second letter of the street you live in:</label>
+    <input type="text" id="street" name="street" required><br>
+    <label for="surname">Third letter of your surname:</label>
+    <input type="text" id="surname" name="surname" required><br>
+    <label for="age">Second Number of your age:</label>
+    <input type="number" id="age" name="age" required><br>
+    <label for="city">First letter of the city they grew up in:</label>
+    <input type="text" id="city" name="city" required><br>
+    <label for="hobby">Second letter of your favorite hobby:</label>
+    <input type="text" id="hobby" name="hobby" required><br>
+    <label for="birthday">First number of the day of your birthday:</label>
+    <input type="number" id="birthday" name="birthday" required><br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+  <div id="gameContainer">
+    <button id="toggleMapping">Toggle Key Mapping</button>
+    <p id="instructions">Control the cursor with "w", "s", "j", and "l"</p>
+    <div class="pointsReceived" id="pointsReceived">0</div>
+    <canvas id="gameCanvas"></canvas>
+    <div class="scoreDisplay">
+      Score: <span id="score">0</span>
+    </div>
+  </div>
+  <script src="/code/script.js"></script>
+</body>
+</html>
