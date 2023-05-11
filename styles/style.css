@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  #gameContainer {
+    display: none;
+    width: 90vw;
+    height: 90vh;
+    position: relative;
+  }
+  
+  #gameCanvas {
+    display: block;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #toggleMapping {
+    position: absolute;
+    top: -20px;
+    left: 0;
+  }
+  
+  #instructions {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    margin: 0;
+  }
+  
+  .scoreDisplay {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .pointsReceived {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    display: none;
+  }
+
+  #registrationForm {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  #form label {
+    display: inline-block;
+    width: 140px;
+    margin-bottom: 10px;
+  }
+  
+  #form input[type="submit"] {
+    margin-top: 20px;
+  }
+  
+  
